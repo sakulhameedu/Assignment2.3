@@ -1,0 +1,33 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class Assign3{
+
+	public static void main (String[] args)
+	{
+	int a,b,c;
+	Scanner sn = new Scanner(System.in);
+		System.out.println("Enter the a numbers:");  //getting input values 
+		a=sn.nextInt();
+		System.out.println("Enter the b numbers:");
+		b=sn.nextInt();
+      	System.out.println("Enter the c numbers:");
+		c=sn.nextInt();
+		if (a > b && a > c)     //nested if loop for largest of three numbers
+				{
+		    System.out.println("A="+a+"  is the largest");
+		}
+		else if (b > c)
+		{
+		    System.out.println("b="+b+"  is the largest");
+		}
+		else 
+		{
+		    System.out.println("c="+c+"  is the largest");
+		}
+		
+	}
+}
